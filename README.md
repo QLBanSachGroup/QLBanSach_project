@@ -16,7 +16,8 @@ Mô tả dự án:
 - AI: gợi ý sản phẩm.
 - Web:MVC ASP
 - Ngôn Ngữ:C#
-- Framework:Bootstrap
+- Framework: ASP.NET
+  
   Nghiệp vụ:
   
   ![image](https://github.com/user-attachments/assets/b9495c96-005a-4b8c-bda7-c6169e4213dd)
@@ -26,5 +27,3 @@ Mô tả dự án:
   Nghiệp vụ
 
   ![image](https://github.com/user-attachments/assets/d7300434-fbdc-48de-9f1e-fdda589e2935)
-
-asdasdasdasdasd
