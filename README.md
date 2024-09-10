@@ -34,7 +34,7 @@ Mô tả dự án:
 
   # Chức Năng
   ## Website
-  ### Tìm kiếm và hiện thị thông tin sách
+  ### Tìm kiếm và hiển thị thông tin sách
   - Tìm kiếm sách theo tên sách, tác giả.
   - Hiển thị thông tin sách, chi tiết sách.
   ### Giỏ hàng
@@ -52,7 +52,7 @@ Mô tả dự án:
  
   ## Winform
   ### Phân quyền
-  - Phân quyền admin, nhân viên, khách hàng.
+  - Phân quyền admin, nhân viên.
   ### Quản lí sách
   - Thêm/Xóa/Sửa thông tin Sách.
   - Chia danh mục Sách.
