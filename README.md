@@ -14,9 +14,11 @@ Mô tả dự án:
 - Được truy cập thông qua mạng, người dùng có thể trải nghiệm việc tìm kiếm và lựa sách một cách linh hoạt, nhanh chóng mà công nghệ mang lại.
 ### Yêu cầu
 - AI: gợi ý sản phẩm.
-- Web: MVC ASP
-- Ngôn Ngữ: C#
-- Framework: Bootstrap
+
+- Web:MVC ASP
+- Ngôn Ngữ:C#
+- Framework: ASP.NET
+  
   
   <b>Nghiệp vụ:</b>
   
@@ -29,5 +31,3 @@ Mô tả dự án:
   <b>Nghiệp vụ:</b>
 
   ![image](https://github.com/user-attachments/assets/d7300434-fbdc-48de-9f1e-fdda589e2935)
-
-asdasdasdasdasd
