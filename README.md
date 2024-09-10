@@ -31,3 +31,31 @@ Mô tả dự án:
   <b>Nghiệp vụ:</b>
 
   ![image](https://github.com/user-attachments/assets/d7300434-fbdc-48de-9f1e-fdda589e2935)
+
+  # Chức Năng
+  ## Website
+  ### Tìm kiếm và hiện thị thông tin sách
+  - Tìm kiếm sách theo tên sách, tác giả.
+  - Hiển thị thông tin sách, chi tiết sách.
+  ### Giỏ hàng
+  - Thêm sách vào giỏ hàng.
+  - Hiển thị thông tin chi tiết giỏ hàng.
+  - Xác nhận giỏ hàng trước khi thanh toán.
+  ### Đăng ký và Đăng nhập
+  - Hiển thị giao diện Đăng ký, Đăng nhập cho Khách hàng
+  ### Thanh toán
+  - Xác nhận thanh toán.
+  - Thanh toán qua ngân hàng.
+  ### Tài khoản khách hàng
+  - Hiển thị lịch sử giao dịch.
+  - Chỉnh sửa thông tin cá nhân
+ 
+  ## Winform
+  ### Phân quyền
+  - Phân quyền admin, nhân viên, khách hàng.
+  ### Quản lí sách
+  - Thêm/Xóa/Sửa thông tin Sách.
+  - Chia danh mục Sách.
+  ### Quản lí khách hàng
+  - Thêm/Xóa/Sửa thông tin Khách hàng
+  
