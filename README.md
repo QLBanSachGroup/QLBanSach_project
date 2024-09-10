@@ -17,13 +17,15 @@ Mô tả dự án:
 - Web:MVC ASP
 - Ngôn Ngữ:C#
 - Framework:Bootstrap
-  Nghiệp vụ:
+  
+  <b>Nghiệp vụ:</b>
   
   ![image](https://github.com/user-attachments/assets/b9495c96-005a-4b8c-bda7-c6169e4213dd)
 
 - App: Winform
 - Ngôn ngữ: C#
-  Nghiệp vụ
+  
+  <b>Nghiệp vụ:</b>
 
   ![image](https://github.com/user-attachments/assets/d7300434-fbdc-48de-9f1e-fdda589e2935)
 
