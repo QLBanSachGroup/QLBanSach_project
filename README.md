@@ -14,16 +14,20 @@ Mô tả dự án:
 - Được truy cập thông qua mạng, người dùng có thể trải nghiệm việc tìm kiếm và lựa sách một cách linh hoạt, nhanh chóng mà công nghệ mang lại.
 ### Yêu cầu
 - AI: gợi ý sản phẩm.
+
 - Web:MVC ASP
 - Ngôn Ngữ:C#
 - Framework: ASP.NET
   
-  Nghiệp vụ:
   
-  ![image](https://github.com/user-attachments/assets/b9495c96-005a-4b8c-bda7-c6169e4213dd)
+  <b>Nghiệp vụ:</b>
+  
+  ![image](https://github.com/user-attachments/assets/7a1a21a4-ed93-4b3e-8803-02acfd9ff02f)
+
 
 - App: Winform
 - Ngôn ngữ: C#
-  Nghiệp vụ
+  
+  <b>Nghiệp vụ:</b>
 
   ![image](https://github.com/user-attachments/assets/d7300434-fbdc-48de-9f1e-fdda589e2935)
