@@ -27,8 +27,6 @@ namespace QLBanSach
 
         private void Employee_Load(object sender, EventArgs e)
         {
-            LoginBLL login = new LoginBLL();
-            txt_fullname.Text = login.getFullName();
             EmployeeBLL employee = new EmployeeBLL();
             dataGridView1.DataSource = employee.getListEmployee();
         }

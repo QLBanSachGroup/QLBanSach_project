@@ -13,6 +13,7 @@ namespace QLBanSach
 {
     public partial class Login : Form
     {
+        LoginBLL login = new LoginBLL();
         public Login()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace QLBanSach
 
         private void Btn_login_Click(object sender, EventArgs e)
         {
-            LoginBLL login = new LoginBLL();
+            
             if (login.getUserNameAndPassword(txt_username.Text, txt_password.Text))
             {
                 MessageBox.Show("login sucessful");
