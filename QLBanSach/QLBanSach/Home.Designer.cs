@@ -48,8 +48,6 @@ namespace QLBanSach
             this.quảnLíKHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmKHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton6 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.nhậpSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xuấtSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton7 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripDropDownButton8 = new System.Windows.Forms.ToolStripDropDownButton();
             this.quảnLíTKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -169,6 +167,7 @@ namespace QLBanSach
             this.toolStripDropDownButton2.Text = "Bán Hàng";
             this.toolStripDropDownButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripDropDownButton2.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.toolStripDropDownButton2.Click += new System.EventHandler(this.toolStripDropDownButton2_Click);
             // 
             // toolStripDropDownButton3
             // 
@@ -265,9 +264,6 @@ namespace QLBanSach
             // 
             // toolStripDropDownButton6
             // 
-            this.toolStripDropDownButton6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nhậpSáchToolStripMenuItem,
-            this.xuấtSáchToolStripMenuItem});
             this.toolStripDropDownButton6.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton6.Image")));
             this.toolStripDropDownButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,21 +272,10 @@ namespace QLBanSach
             this.toolStripDropDownButton6.Padding = new System.Windows.Forms.Padding(10);
             this.toolStripDropDownButton6.ShowDropDownArrow = false;
             this.toolStripDropDownButton6.Size = new System.Drawing.Size(223, 47);
-            this.toolStripDropDownButton6.Text = "Nhập / Xuất Sách";
+            this.toolStripDropDownButton6.Text = "Hoá Đơn";
             this.toolStripDropDownButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripDropDownButton6.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            // 
-            // nhậpSáchToolStripMenuItem
-            // 
-            this.nhậpSáchToolStripMenuItem.Name = "nhậpSáchToolStripMenuItem";
-            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(163, 28);
-            this.nhậpSáchToolStripMenuItem.Text = "Nhập Sách";
-            // 
-            // xuấtSáchToolStripMenuItem
-            // 
-            this.xuấtSáchToolStripMenuItem.Name = "xuấtSáchToolStripMenuItem";
-            this.xuấtSáchToolStripMenuItem.Size = new System.Drawing.Size(163, 28);
-            this.xuấtSáchToolStripMenuItem.Text = "Xuất Sách";
+            this.toolStripDropDownButton6.Click += new System.EventHandler(this.toolStripDropDownButton6_Click);
             // 
             // toolStripDropDownButton7
             // 
@@ -505,8 +490,6 @@ namespace QLBanSach
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStripMenuItem quảnLíKHToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmKHToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nhậpSáchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xuấtSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLíTKToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phânQuyềnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;

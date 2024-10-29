@@ -1,0 +1,6 @@
+D:\QLBanSach_project-Nghia\QLBanSach\DTO_QLBS\bin\Debug\DTO_QLBS.dll.config
+D:\QLBanSach_project-Nghia\QLBanSach\DTO_QLBS\bin\Debug\DTO_QLBS.dll
+D:\QLBanSach_project-Nghia\QLBanSach\DTO_QLBS\bin\Debug\DTO_QLBS.pdb
+D:\QLBanSach_project-Nghia\QLBanSach\DTO_QLBS\obj\Debug\DTO_QLBS.csproj.CoreCompileInputs.cache
+D:\QLBanSach_project-Nghia\QLBanSach\DTO_QLBS\obj\Debug\DTO_QLBS.dll
+D:\QLBanSach_project-Nghia\QLBanSach\DTO_QLBS\obj\Debug\DTO_QLBS.pdb
