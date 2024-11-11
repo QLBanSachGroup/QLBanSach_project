@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBanSach", "QLBanSach\QLBanSach.csproj", "{AAB681DF-2550-49F0-AF40-2D7706035520}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAB681DF-2550-49F0-AF40-2D7706035520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB681DF-2550-49F0-AF40-2D7706035520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB681DF-2550-49F0-AF40-2D7706035520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB681DF-2550-49F0-AF40-2D7706035520}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {043292EC-E14A-462B-8893-5FB0BA621C30}
+	EndGlobalSection
+EndGlobal
