@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="buttonX1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -34469,7 +34466,7 @@
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAbqlJREFUeF7tnQd8LFXZ/4cO0jtKU4qCIGJHlOJLsyCCgjRREQSlC6igl44gKuJf
+        wgAADsIBFShKgAAAbqlJREFUeF7tnQd8LFXZ/4cO0jtKU4qCIGJHlOJLsyCCgjRREQSlC6igl44gKuJf
         FFFBUBG42Z1JcnuvXG7vvdfce3OzOzO7yaYn53+eycnNlmd2Zze7ye7M7/v5fN/rS2Y3m9mZc5455Xk0
         AECZI4Smjd3xAS1snqTp1qc03b5UM6I3aIZ5t/z/n5D+WTOst6U10lHyZxPlv9Plv3Pkv4ukKzQ9sl7+
         u1UzIvVa2LLla5u1UKRL/v+dzv92/pv8GR3Tc+yKnteas+W/9F70nvK95e/Qrf/1/E7z8Z7PEL3e+Uwh
@@ -34947,7 +34944,7 @@
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEeBSURBVHhe7Z0J
+        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEeBSURBVHhe7Z0J
         fFxXebdnRqNt7ozshCwQQlgS1tACTUtpWUqglLL1a9j3fhQIBUoX2pKvUKjZ6UIp2JYta/Fux7KlmZEc
         J46TmOwJZN+IZNnyImuxJO+Wtb/fOdIJca6ObC2z3Dv3eX6/5+dEmhnN3HvP+z8zc+97QgDgcXZKNNYg
         L3DS8rvKd8XT8pFEUq5VfsNJyo/U/1cqN8RTklbuUN6TSMkD6t9dTkr2qH8PuxxWikv9s+fcbuK+SWk1

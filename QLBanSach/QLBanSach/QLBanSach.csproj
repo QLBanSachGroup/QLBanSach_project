@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QLBanSach</RootNamespace>
     <AssemblyName>QLBanSach</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL_QLBS">
+      <HintPath>..\BLL_QLBS\bin\Debug\BLL_QLBS.dll</HintPath>
+    </Reference>
     <Reference Include="devcomponents.dotnetbar2">
       <HintPath>..\..\..\..\download\devcomponents.dotnetbar2.dll</HintPath>
     </Reference>
@@ -53,6 +57,12 @@
     </Compile>
     <Compile Include="Book.Designer.cs">
       <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
@@ -119,6 +129,9 @@
     <EmbeddedResource Include="Book.resx">
       <DependentUpon>Book.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +187,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO_QLBS\DTO_QLBS.csproj">
+      <Project>{529BC7C0-C834-45E4-B5BD-CBA6EE02BC55}</Project>
+      <Name>DTO_QLBS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
