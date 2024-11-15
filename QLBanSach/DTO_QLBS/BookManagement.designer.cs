@@ -81,7 +81,7 @@ namespace DTO_QLBS
     #endregion
 		
 		public BookManagementDataContext() : 
-				base(global::DTO_QLBS.Properties.Settings.Default.BookManagementConnectionString, mappingSource)
+				base(global::DTO_QLBS.Properties.Settings.Default.qlbsConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

@@ -1,0 +1,7 @@
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach\DTO_QLBS\obj\Debug\DTO_QLBS.csproj.AssemblyReference.cache
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach\DTO_QLBS\obj\Debug\DTO_QLBS.csproj.CoreCompileInputs.cache
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach\DTO_QLBS\bin\Debug\DTO_QLBS.dll.config
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach\DTO_QLBS\bin\Debug\DTO_QLBS.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach\DTO_QLBS\bin\Debug\DTO_QLBS.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach\DTO_QLBS\obj\Debug\DTO_QLBS.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach\DTO_QLBS\obj\Debug\DTO_QLBS.pdb
