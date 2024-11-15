@@ -26,22 +26,9 @@ namespace DTO_QLBS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MSI\\SQLEXPRESS;Initial Catalog=BookManagement;User ID=sa; Password=12" +
-            "3")]
         public string qlbsConnectionString {
             get {
                 return ((string)(this["qlbsConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MSI\\SQLEXPRESS;Initial Catalog=BookManagement;User ID=sa;Password=123" +
-            "")]
-        public string BookManagementConnectionString {
-            get {
-                return ((string)(this["BookManagementConnectionString"]));
             }
         }
     }
