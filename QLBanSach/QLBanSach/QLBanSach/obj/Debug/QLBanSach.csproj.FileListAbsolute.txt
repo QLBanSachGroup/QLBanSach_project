@@ -1,7 +1,6 @@
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe.config
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\bin\Debug\QLBanSach.pdb
-D:\Workspace\QLBanSach\QLBanSach\QLBanSach\bin\Debug\devcomponents.dotnetbar2.dll
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.AssemblyReference.cache
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Properties.Resources.resources
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.GenerateResource.cache
@@ -18,23 +17,140 @@ D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Book.resou
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Customer.resources
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Employee.resources
 D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sales.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe.config
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\bin\Debug\QLBanSach.pdb
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.AssemblyReference.cache
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.SuggestedBindingRedirects.cache
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Book.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Customer.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Employee.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Home.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Login.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Properties.Resources.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sales.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Book.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Customer.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Employee.resources
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.GenerateResource.cache
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CoreCompileInputs.cache
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CopyComplete
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.exe
-D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.pdb
+D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sell.resources
+D:\Workspace\QLBanSach\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Order.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe.config
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\QLBanSach.pdb
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.dll
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.dll
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.pdb
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.pdb
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.pdb
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll.config
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.AssemblyReference.cache
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.SuggestedBindingRedirects.cache
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Book.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Customer.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Employee.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Home.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Login.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Order.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Properties.Resources.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sales.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Book.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Customer.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Employee.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sell.resources
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.GenerateResource.cache
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CoreCompileInputs.cache
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CopyComplete
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.exe
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.pdb
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\ENUM.dll
+D:\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\ENUM.pdb
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.AssemblyReference.cache
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.SuggestedBindingRedirects.cache
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Book.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Customer.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Employee.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Home.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Login.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Order.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Properties.Resources.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sales.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Book.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Customer.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Employee.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sell.resources
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.GenerateResource.cache
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CoreCompileInputs.cache
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.exe
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.pdb
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe.config
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\QLBanSach.pdb
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.dll
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.dll
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\ENUM.dll
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.pdb
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll.config
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.pdb
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.pdb
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\bin\Debug\ENUM.pdb
+D:\UDPMTM\QLBanSach_project-Nghia\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CopyComplete
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.AssemblyReference.cache
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Book.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Customer.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Employee.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Home.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Login.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Order.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Properties.Resources.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sales.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Book.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Customer.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Employee.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sell.resources
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.GenerateResource.cache
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CoreCompileInputs.cache
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.exe
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.pdb
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe.config
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\QLBanSach.pdb
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.dll
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.dll
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.pdb
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll.config
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.pdb
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.pdb
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CopyComplete
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Category.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe.config
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\QLBanSach.exe
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\QLBanSach.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\DTO_QLBS.dll.config
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\DAL_QLBS.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.AssemblyReference.cache
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.SuggestedBindingRedirects.cache
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Book.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Category.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Customer.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Employee.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Home.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Login.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Order.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Properties.Resources.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sales.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Book.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Customer.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Search_Employee.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sell.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.GenerateResource.cache
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CoreCompileInputs.cache
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csproj.CopyComplete
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.exe
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.PhanQuyen.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\BLL_QLBS.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\ENUM.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\ENUM.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\AForge.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\AForge.Video.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\AForge.xml
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\AForge.Video.xml
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\obj\Debug\QLBanSach.Sale1.resources
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\zxing.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\zxing.presentation.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\zxing.xml
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\QLBanSach\bin\Debug\zxing.presentation.xml

@@ -1,0 +1,15 @@
+D:\QLBanSach_project-Nghia\QLBanSach\ENUM\bin\Debug\ENUM.dll
+D:\QLBanSach_project-Nghia\QLBanSach\ENUM\bin\Debug\ENUM.pdb
+D:\QLBanSach_project-Nghia\QLBanSach\ENUM\obj\Debug\ENUM.csproj.CoreCompileInputs.cache
+D:\QLBanSach_project-Nghia\QLBanSach\ENUM\obj\Debug\ENUM.dll
+D:\QLBanSach_project-Nghia\QLBanSach\ENUM\obj\Debug\ENUM.pdb
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\ENUM\bin\Debug\ENUM.dll
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\ENUM\bin\Debug\ENUM.pdb
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\ENUM\obj\Debug\ENUM.csproj.CoreCompileInputs.cache
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\ENUM\obj\Debug\ENUM.dll
+C:\Users\NGHIA\Desktop\QLBanSach_project-Nha\QLBanSach\ENUM\obj\Debug\ENUM.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\ENUM\bin\Debug\ENUM.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\ENUM\bin\Debug\ENUM.pdb
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\ENUM\obj\Debug\ENUM.csproj.CoreCompileInputs.cache
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\ENUM\obj\Debug\ENUM.dll
+C:\Users\THANH NHA\Desktop\UDTM\QLBanSach_project\QLBanSach\ENUM\obj\Debug\ENUM.pdb

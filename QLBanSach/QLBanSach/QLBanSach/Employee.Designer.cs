@@ -34,7 +34,7 @@ namespace QLBanSach
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txt_fullname = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
@@ -67,32 +67,26 @@ namespace QLBanSach
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboGender = new System.Windows.Forms.ComboBox();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -100,7 +94,7 @@ namespace QLBanSach
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,7 +112,7 @@ namespace QLBanSach
             // 
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.txt_fullname);
             this.panel5.Location = new System.Drawing.Point(6, 590);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(222, 134);
@@ -145,15 +139,15 @@ namespace QLBanSach
             this.label3.TabIndex = 1;
             this.label3.Text = "Quản Lý";
             // 
-            // label2
+            // txt_fullname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nguyễn Trung C";
+            this.txt_fullname.AutoSize = true;
+            this.txt_fullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fullname.Location = new System.Drawing.Point(33, 45);
+            this.txt_fullname.Name = "txt_fullname";
+            this.txt_fullname.Size = new System.Drawing.Size(151, 24);
+            this.txt_fullname.TabIndex = 0;
+            this.txt_fullname.Text = "Nguyễn Trung C";
             // 
             // panel4
             // 
@@ -166,6 +160,7 @@ namespace QLBanSach
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton2,
             this.toolStripDropDownButton3,
@@ -247,13 +242,13 @@ namespace QLBanSach
             // quảnLíNVToolStripMenuItem
             // 
             this.quảnLíNVToolStripMenuItem.Name = "quảnLíNVToolStripMenuItem";
-            this.quảnLíNVToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.quảnLíNVToolStripMenuItem.Size = new System.Drawing.Size(178, 28);
             this.quảnLíNVToolStripMenuItem.Text = "Quản lí NV";
             // 
             // tìmKiếmNVToolStripMenuItem
             // 
             this.tìmKiếmNVToolStripMenuItem.Name = "tìmKiếmNVToolStripMenuItem";
-            this.tìmKiếmNVToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.tìmKiếmNVToolStripMenuItem.Size = new System.Drawing.Size(178, 28);
             this.tìmKiếmNVToolStripMenuItem.Text = "Tìm kiếm NV";
             // 
             // toolStripDropDownButton5
@@ -276,13 +271,13 @@ namespace QLBanSach
             // quảnLíKHToolStripMenuItem
             // 
             this.quảnLíKHToolStripMenuItem.Name = "quảnLíKHToolStripMenuItem";
-            this.quảnLíKHToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.quảnLíKHToolStripMenuItem.Size = new System.Drawing.Size(176, 28);
             this.quảnLíKHToolStripMenuItem.Text = "Quản lí KH";
             // 
             // tìmKiếmKHToolStripMenuItem
             // 
             this.tìmKiếmKHToolStripMenuItem.Name = "tìmKiếmKHToolStripMenuItem";
-            this.tìmKiếmKHToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.tìmKiếmKHToolStripMenuItem.Size = new System.Drawing.Size(176, 28);
             this.tìmKiếmKHToolStripMenuItem.Text = "Tìm kiếm KH";
             // 
             // toolStripDropDownButton6
@@ -305,13 +300,13 @@ namespace QLBanSach
             // nhậpSáchToolStripMenuItem
             // 
             this.nhậpSáchToolStripMenuItem.Name = "nhậpSáchToolStripMenuItem";
-            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(163, 28);
             this.nhậpSáchToolStripMenuItem.Text = "Nhập Sách";
             // 
             // xuấtSáchToolStripMenuItem
             // 
             this.xuấtSáchToolStripMenuItem.Name = "xuấtSáchToolStripMenuItem";
-            this.xuấtSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.xuấtSáchToolStripMenuItem.Size = new System.Drawing.Size(163, 28);
             this.xuấtSáchToolStripMenuItem.Text = "Xuất Sách";
             // 
             // toolStripDropDownButton7
@@ -349,19 +344,19 @@ namespace QLBanSach
             // quảnLíTKToolStripMenuItem
             // 
             this.quảnLíTKToolStripMenuItem.Name = "quảnLíTKToolStripMenuItem";
-            this.quảnLíTKToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.quảnLíTKToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
             this.quảnLíTKToolStripMenuItem.Text = "Quản lí TK";
             // 
             // phânQuyềnToolStripMenuItem
             // 
             this.phânQuyềnToolStripMenuItem.Name = "phânQuyềnToolStripMenuItem";
-            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
             this.phânQuyềnToolStripMenuItem.Text = "Phân quyền";
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(171, 28);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             // 
             // toolStripDropDownButton9
@@ -468,30 +463,24 @@ namespace QLBanSach
             // 
             this.panel2.BackColor = System.Drawing.Color.Ivory;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.domainUpDown1);
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.cboGender);
+            this.panel2.Controls.Add(this.dgvEmployee);
+            this.panel2.Controls.Add(this.btnClear);
+            this.panel2.Controls.Add(this.btnUpdate);
+            this.panel2.Controls.Add(this.btnAdd);
+            this.panel2.Controls.Add(this.txtEmail);
+            this.panel2.Controls.Add(this.txtPhone);
+            this.panel2.Controls.Add(this.txtAddress);
+            this.panel2.Controls.Add(this.txtFullName);
+            this.panel2.Controls.Add(this.dtpDateOfBirth);
+            this.panel2.Controls.Add(this.txtID);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(249, 3);
@@ -499,163 +488,120 @@ namespace QLBanSach
             this.panel2.Size = new System.Drawing.Size(890, 727);
             this.panel2.TabIndex = 2;
             // 
-            // textBox6
+            // cboGender
             // 
-            this.textBox6.Location = new System.Drawing.Point(787, 296);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 25;
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Location = new System.Drawing.Point(730, 152);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(121, 21);
+            this.cboGender.TabIndex = 27;
             // 
-            // label15
+            // dgvEmployee
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(713, 298);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 18);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "Lương:";
+            this.dgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Location = new System.Drawing.Point(30, 382);
+            this.dgvEmployee.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.RowHeadersWidth = 51;
+            this.dgvEmployee.RowTemplate.Height = 24;
+            this.dgvEmployee.Size = new System.Drawing.Size(841, 328);
+            this.dgvEmployee.TabIndex = 26;
             // 
-            // dataGridView1
+            // btnClear
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 351);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(874, 373);
-            this.dataGridView1.TabIndex = 23;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
+            this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClear.Location = new System.Drawing.Point(328, 284);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(122, 47);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "Làm mới";
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnUpdate
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(328, 284);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 47);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Làm mới";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(167, 284);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(128, 47);
+            this.btnUpdate.TabIndex = 21;
+            this.btnUpdate.Text = "Cập nhật";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(167, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 47);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Cập nhật";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(30, 284);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(109, 47);
+            this.btnAdd.TabIndex = 20;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // txtEmail
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(30, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 47);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Thêm";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtEmail.Location = new System.Drawing.Point(386, 209);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(217, 20);
+            this.txtEmail.TabIndex = 19;
             // 
-            // textBox5
+            // txtPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(670, 208);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(217, 20);
-            this.textBox5.TabIndex = 19;
+            this.txtPhone.Location = new System.Drawing.Point(145, 208);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(160, 20);
+            this.txtPhone.TabIndex = 16;
             // 
-            // radioButton2
+            // txtAddress
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(755, 157);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 18;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.txtAddress.Location = new System.Drawing.Point(396, 155);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(207, 20);
+            this.txtAddress.TabIndex = 15;
             // 
-            // radioButton1
+            // txtFullName
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(702, 157);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 17;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtFullName.Location = new System.Drawing.Point(145, 156);
+            this.txtFullName.Multiline = true;
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(150, 20);
+            this.txtFullName.TabIndex = 13;
             // 
-            // textBox4
+            // dtpDateOfBirth
             // 
-            this.textBox4.Location = new System.Drawing.Point(443, 208);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(160, 20);
-            this.textBox4.TabIndex = 16;
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(418, 101);
+            this.dtpDateOfBirth.Name = "dtpDateOfBirth";
+            this.dtpDateOfBirth.Size = new System.Drawing.Size(185, 20);
+            this.dtpDateOfBirth.TabIndex = 11;
             // 
-            // textBox3
+            // txtID
             // 
-            this.textBox3.Location = new System.Drawing.Point(396, 155);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(207, 20);
-            this.textBox3.TabIndex = 15;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 209);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 21);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(145, 156);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
-            this.textBox2.TabIndex = 13;
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(419, 101);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(157, 20);
-            this.domainUpDown1.TabIndex = 12;
-            this.domainUpDown1.Text = "domainUpDown1";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(702, 101);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(185, 20);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(145, 101);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(145, 101);
+            this.txtID.Multiline = true;
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(150, 20);
+            this.txtID.TabIndex = 10;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(609, 208);
+            this.label14.Location = new System.Drawing.Point(325, 209);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(55, 18);
             this.label14.TabIndex = 9;
@@ -665,21 +611,11 @@ namespace QLBanSach
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(325, 208);
+            this.label13.Location = new System.Drawing.Point(27, 208);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(112, 18);
             this.label13.TabIndex = 8;
             this.label13.Text = "Số điện thoại:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(27, 208);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 18);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Chức vụ:";
             // 
             // label11
             // 
@@ -695,7 +631,7 @@ namespace QLBanSach
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(609, 101);
+            this.label10.Location = new System.Drawing.Point(325, 101);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(87, 18);
             this.label10.TabIndex = 5;
@@ -705,7 +641,7 @@ namespace QLBanSach
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(609, 156);
+            this.label9.Location = new System.Drawing.Point(648, 154);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(76, 18);
             this.label9.TabIndex = 4;
@@ -720,17 +656,6 @@ namespace QLBanSach
             this.label8.Size = new System.Drawing.Size(85, 18);
             this.label8.TabIndex = 3;
             this.label8.Text = "Họ và tên:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(325, 101);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 18);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Trạng thái:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -752,13 +677,28 @@ namespace QLBanSach
             this.label5.TabIndex = 0;
             this.label5.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelete.Location = new System.Drawing.Point(481, 284);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(122, 47);
+            this.btnDelete.TabIndex = 28;
+            this.btnDelete.Text = "Xoá";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1151, 741);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Employee";
             this.Text = "Employee";
             this.panel1.ResumeLayout(false);
@@ -773,7 +713,7 @@ namespace QLBanSach
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -784,7 +724,7 @@ namespace QLBanSach
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label txt_fullname;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
@@ -817,31 +757,25 @@ namespace QLBanSach
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.DataGridView dgvEmployee;
+        private System.Windows.Forms.ComboBox cboGender;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
