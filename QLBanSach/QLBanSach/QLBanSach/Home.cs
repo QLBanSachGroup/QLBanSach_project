@@ -65,5 +65,17 @@ namespace QLBanSach
             Sales sales = new Sales();
             sales.Show();
         }
+
+        private void toolStripDropDownButton2_Click(object sender, EventArgs e)
+        {
+            Sell sell = new Sell();
+            sell.Show();
+        }
+
+        private void toolStripDropDownButton6_Click(object sender, EventArgs e)
+        {
+            Order order = new Order();
+            order.Show();
+        }
     }
 }
