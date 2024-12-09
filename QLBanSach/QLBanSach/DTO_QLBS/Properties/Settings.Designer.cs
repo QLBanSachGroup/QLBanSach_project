@@ -26,7 +26,7 @@ namespace DTO_QLBS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-GJNHNQU;Initial Catalog=qlbs;User ID=sa;Password=123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-GJNHNQU;Initial Catalog=qlbs;Integrated Security=True")]
         public string qlbsConnectionString {
             get {
                 return ((string)(this["qlbsConnectionString"]));

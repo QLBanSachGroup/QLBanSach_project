@@ -80,5 +80,12 @@ namespace BLL_QLBS
             if (string.IsNullOrWhiteSpace(book.code_category)) return false;
             return true;
         }
+
+        // Lấy độ ưu tiên
+        public List<KeyValuePair<int, string>> GetPriorities()
+        {
+            return bookDAL.GetPriorities();
+        }
+
     }
 }

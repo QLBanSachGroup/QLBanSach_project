@@ -21,5 +21,20 @@ namespace BLL_QLBS
         {
             return login.getUserNameAndPassword(username, password); 
         }
+
+        public string getFullName(string username, string password)
+        {
+            return login.getFullName(username, password);
+        }
+
+        public string getRole(string username, string password)
+        {
+            return login.getRole(username, password);
+        }
+
+        public string getRoleCode(string username, string password)
+        {
+            return login.getRoleCode(username, password);
+        }
     }
 }

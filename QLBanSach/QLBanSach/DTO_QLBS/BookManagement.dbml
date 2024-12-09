@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="qlbs" Class="BookManagementDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-GJNHNQU;Initial Catalog=qlbs;User ID=sa" SettingsObjectName="DTO_QLBS.Properties.Settings" SettingsPropertyName="qlbsConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-GJNHNQU;Initial Catalog=qlbs;Integrated Security=True" SettingsObjectName="DTO_QLBS.Properties.Settings" SettingsPropertyName="qlbsConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.author" Member="authors">
     <Type Name="author">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -8,6 +8,7 @@
       <Column Name="bio" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
       <Column Name="phone" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
       <Column Name="email" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="image" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="author_book_join_author" Member="book_join_authors" ThisKey="id" OtherKey="id_author" Type="book_join_author" />
     </Type>
   </Table>

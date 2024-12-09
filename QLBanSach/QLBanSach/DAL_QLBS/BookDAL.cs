@@ -13,11 +13,13 @@ namespace DAL_QLBS
         private BookManagementDataContext qlbs = new BookManagementDataContext();
 
         public BookDAL() { }
-        // Phương thức lấy tất cả sách
+        // Phương thức lấy tất cả sách đang còn
         public List<BookDTO> GetAllBooks()
         {
-            return qlbs.books.Select(book => new BookDTO
-            {
+            return qlbs.books
+               .Where(book => book.status == 1)
+               .Select(book => new BookDTO
+               {
                 id = book.id,
                 name = book.name,
                 barcode = book.barcode,
@@ -26,7 +28,8 @@ namespace DAL_QLBS
                 description = book.description,
                 id_publisher = book.id_publisher,
                 code_category = book.code_category,
-                image = book.image != null ? book.image.ToArray() : null
+                image = book.image != null ? book.image.ToArray() : null,
+                priority = book.priority
             }).ToList();
         }
 
@@ -62,7 +65,14 @@ namespace DAL_QLBS
                     existingBook.description = book.description;
                     existingBook.id_publisher = book.id_publisher;
                     existingBook.code_category = book.code_category;
-                    existingBook.image = book.image;
+
+                    // Kiểm tra nếu hình ảnh không null mới cập nhật
+                    if (book.image != null)
+                    {
+                        existingBook.image = book.image;
+                    }
+
+                    existingBook.priority = book.priority;
                     qlbs.SubmitChanges();
                     return true;
                 }
@@ -79,17 +89,29 @@ namespace DAL_QLBS
         {
             try
             {
+                Console.WriteLine($"Đang xử lý cập nhật status cho sách với ID: {bookId}");
+
+                // Lấy sách từ bảng books
                 var book = qlbs.books.SingleOrDefault(b => b.id == bookId);
                 if (book != null)
                 {
-                    qlbs.books.DeleteOnSubmit(book);
-                    qlbs.SubmitChanges();
-                    return true;
+                    Console.WriteLine($"Đang cập nhật status cho sách: {book.name}");
+                    book.status = 0; // Cập nhật status thành 0
                 }
-                return false;
+                else
+                {
+                    Console.WriteLine($"Không tìm thấy sách với ID: {bookId}");
+                    return false;
+                }
+
+                // Lưu thay đổi
+                qlbs.SubmitChanges();
+                Console.WriteLine("Cập nhật status của sách thành công!");
+                return true;
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine($"Lỗi khi cập nhật status của sách: {ex.Message}\nStackTrace: {ex.StackTrace}");
                 return false;
             }
         }
@@ -103,5 +125,18 @@ namespace DAL_QLBS
                               select a.name).FirstOrDefault();
             return authorName;
         }
+
+        public List<KeyValuePair<int, string>> GetPriorities()
+        {
+            var priorityList = new List<KeyValuePair<int, string>>
+            {
+                new KeyValuePair<int, string>(1, "Sách mới nhất"),
+                new KeyValuePair<int, string>(2, "Sách nổi bật"),
+                new KeyValuePair<int, string>(3, "Sách thường")
+            };
+
+            return priorityList;
+        }
+
     }
 }

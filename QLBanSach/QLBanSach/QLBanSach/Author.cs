@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO_QLBS;
 using BLL_QLBS;
+using System.IO;
 
 namespace QLBanSach
 {
@@ -24,9 +25,22 @@ namespace QLBanSach
             btnDelete.Click += BtnDelete_Click;
             btnClear.Click += BtnClear_Click;
             dgvAuthor.CellClick += DgvAuthor_CellClick;
+            btnChoose.Click += BtnChoose_Click;
             txtID.Enabled = false;
             //==============
             LoadAuthors();
+        }
+
+        private void BtnChoose_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files (*.jpg; *.jpeg; *.png)|*.jpg;*.jpeg;*.png";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    picAuthor.Image = Image.FromFile(openFileDialog.FileName);
+                }
+            }
         }
 
         private void BtnClear_Click(object sender, EventArgs e)
@@ -45,6 +59,17 @@ namespace QLBanSach
                 txtBio.Text = row.Cells["bio"].Value.ToString();
                 txtPhone.Text = row.Cells["phone"].Value.ToString();
                 txtEmail.Text = row.Cells["email"].Value.ToString();
+                // Lấy hình ảnh từ cơ sở dữ liệu dựa trên ID
+                int id = int.Parse(txtID.Text);
+                var author = authorBLL.GetAllAuthors().FirstOrDefault(a => a.id == id);
+                if (author != null && author.image != null)
+                {
+                    picAuthor.Image = ByteArrayToImage(author.image.ToArray()); // Sử dụng ToArray()
+                }
+                else
+                {
+                    picAuthor.Image = null; // Nếu không có ảnh
+                }
             }
         }
 
@@ -80,7 +105,8 @@ namespace QLBanSach
                     address = txtAddress.Text,
                     bio = txtBio.Text,
                     phone = txtPhone.Text,
-                    email = txtEmail.Text
+                    email = txtEmail.Text,
+                    image = picAuthor.Image != null ? ImageToByteArray(picAuthor.Image) : null
                 };
 
                 if (authorBLL.UpdateAuthor(author))
@@ -108,7 +134,8 @@ namespace QLBanSach
                 address = txtAddress.Text,
                 bio = txtBio.Text,
                 phone = txtPhone.Text,
-                email = txtEmail.Text
+                email = txtEmail.Text,
+                image = picAuthor.Image != null ? ImageToByteArray(picAuthor.Image) : null
             };
 
             if (authorBLL.AddAuthor(author))
@@ -126,7 +153,15 @@ namespace QLBanSach
         private void LoadAuthors()
         {
             List<author> authors = authorBLL.GetAllAuthors();
-            dgvAuthor.DataSource = authors;
+            dgvAuthor.DataSource = authors.Select(a => new
+            {
+                a.id,
+                a.name,
+                a.address,
+                a.bio,
+                a.phone,
+                a.email
+            }).ToList();
         }
         private void ClearInputFields()
         {
@@ -136,6 +171,22 @@ namespace QLBanSach
             txtBio.Text = string.Empty;
             txtPhone.Text = string.Empty;
             txtEmail.Text = string.Empty;
+        }
+        private byte[] ImageToByteArray(Image image)
+        {
+            using (var ms = new MemoryStream())
+            {
+                image.Save(ms, image.RawFormat);
+                return ms.ToArray();
+            }
+        }
+
+        private Image ByteArrayToImage(byte[] byteArray)
+        {
+            using (var ms = new MemoryStream(byteArray))
+            {
+                return Image.FromStream(ms);
+            }
         }
     }
 }

@@ -257,6 +257,8 @@ namespace DTO_QLBS
 		
 		private string _email;
 		
+		private System.Data.Linq.Binary _image;
+		
 		private EntitySet<book_join_author> _book_join_authors;
 		
     #region Extensibility Method Definitions
@@ -275,6 +277,8 @@ namespace DTO_QLBS
     partial void OnphoneChanged();
     partial void OnemailChanging(string value);
     partial void OnemailChanged();
+    partial void OnimageChanging(System.Data.Linq.Binary value);
+    partial void OnimageChanged();
     #endregion
 		
 		public author()
@@ -399,6 +403,26 @@ namespace DTO_QLBS
 					this._email = value;
 					this.SendPropertyChanged("email");
 					this.OnemailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_image", DbType="VarBinary(MAX)", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary image
+		{
+			get
+			{
+				return this._image;
+			}
+			set
+			{
+				if ((this._image != value))
+				{
+					this.OnimageChanging(value);
+					this.SendPropertyChanging();
+					this._image = value;
+					this.SendPropertyChanged("image");
+					this.OnimageChanged();
 				}
 			}
 		}

@@ -17,5 +17,7 @@ namespace DTO_QLBS
         public int id_publisher { get; set; }
         public string code_category { get; set; }
         public byte[] image { get; set; }
+        public byte? priority { get; set; }
+        public byte? status { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace QLBanSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Book());
+            Application.Run(new Login());
         }
     }
 }

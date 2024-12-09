@@ -75,14 +75,17 @@ namespace QLBanSach
                 if (isAdmin)
                 {
                     p.phanQuyen(id, "Admin");
+                    MessageBox.Show("Đã cấp quyền Admin");
                 }
                 else if (isEmployee)
                 {
                     p.phanQuyen(id, "Employee");
+                    MessageBox.Show("Đã cấp quyền Nhân viên");
                 }
                 else if (isSaler)
                 {
                     p.phanQuyen(id, "Saler");
+                    MessageBox.Show("Đã cấp quyền Nhân viên bán hàng");
                 }
             }
         }

@@ -43,6 +43,8 @@ namespace QLBanSach
                 txtAddress.Text = row.Cells["address"].Value.ToString();
                 txtEmail.Text = row.Cells["email"].Value.ToString();
                 cboGender.SelectedItem = row.Cells["gender"].Value.ToString();
+                txtUserName.Text = row.Cells["user_name"].Value.ToString();
+                txtPassword.Text = row.Cells["password"].Value.ToString();
                 dtpDateOfBirth.Value = Convert.ToDateTime(row.Cells["date_of_birth"].Value);
             }
         }
@@ -84,13 +86,14 @@ namespace QLBanSach
                     code_role = "EMPLOYEE", // Đặt vai trò là "EMPLOYEE"
 
                     // Đảm bảo các trường bắt buộc không NULL
-                    user_name = txtFullName.Text.Trim().Replace(" ", "_").ToLower(),
-                    password = "default_password", // Giá trị mặc định hoặc nhập từ người dùng
+                    user_name = txtUserName.Text,
+                    password = txtPassword.Text, // Giá trị mặc định hoặc nhập từ người dùng
                     modified_date = DateTime.Now,
-                    modified_by = "System", // Hoặc tên người dùng hiện tại
+                    modified_by = "admin", // Hoặc tên người dùng hiện tại
 
                     // Thông tin tạo có thể được giữ nguyên hoặc lấy từ cơ sở dữ liệu
-                    create_by = "System",
+                    create_by = "admin",
+                    status = 1,
                     create_date = DateTime.Now
                 };
 
@@ -121,13 +124,14 @@ namespace QLBanSach
                     gender = cboGender.SelectedItem?.ToString(),
                     date_of_birth = dtpDateOfBirth.Value,
                     code_role = "EMPLOYEE",
-                    user_name = "",
-                    password = "", // Mật khẩu mặc định hoặc nhập từ người dùng
-                    image = "default_image_path",
-                    image64bit = "default_image_data",
+                    user_name = txtUserName.Text,
+                    password = txtPassword.Text, // Mật khẩu mặc định hoặc nhập từ người dùng
+                    image = "",
+                    image64bit = "",
                     modified_date = DateTime.Now,
-                    modified_by = "System",
-                    create_by = "System",
+                    modified_by = "admin",
+                    create_by = "admin",
+                    status = 1,
                     create_date = DateTime.Now
                 };
 
@@ -192,6 +196,8 @@ namespace QLBanSach
             txtEmail.Clear();
             cboGender.SelectedIndex = -1;
             dtpDateOfBirth.Value = DateTime.Now;
+            txtUserName.Clear();
+            txtPassword.Clear();
         }
 
         // Nạp dữ liệu vào ComboBox giới tính

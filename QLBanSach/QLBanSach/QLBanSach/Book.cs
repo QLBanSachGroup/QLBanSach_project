@@ -22,12 +22,15 @@ namespace QLBanSach
         public Book()
         {
             InitializeComponent();
+            //==============================
             bookBLL = new BookBLL();
             categoryBLL = new CategoryBLL();
             publisherBLL = new PublisherBLL();
             authorBLL = new AuthorBLL();
             dgvBook.CellClick += DgvBook_CellClick;
             btnAdd.Click += BtnAdd_Click;
+            btnUpdate.Click += BtnUpdate_Click;
+            btnDelete.Click += BtnDelete_Click;
             btnChoose.Click += BtnChoose_Click;
             btnClear.Click += BtnClear_Click;
             txtID.Enabled = false;
@@ -36,6 +39,104 @@ namespace QLBanSach
             LoadPublishers();
             LoadBooks();
             LoadAuthors();
+            LoadPriorities();
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtID.Text))
+                {
+                    MessageBox.Show("Vui lòng chọn sách cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                int bookId = int.Parse(txtID.Text);
+
+                var confirmResult = MessageBox.Show(
+                    "Việc xóa sách sẽ vô hiệu hóa sách này. Bạn có chắc chắn muốn tiếp tục?",
+                    "Xác nhận xóa",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (confirmResult == DialogResult.Yes)
+                {
+                    bool isDeleted = bookBLL.DeleteBook(bookId); // Gọi hàm cập nhật status
+                    if (isDeleted)
+                    {
+                        MessageBox.Show("Sách đã được vô hiệu hóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadBooks();
+                        BtnClear_Click(null, null);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thể vô hiệu hóa sách. Kiểm tra log để biết thêm thông tin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi trong DeleteBook: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Lỗi chi tiết: {ex.InnerException.Message}");
+                }
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+            }
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Kiểm tra đầu vào
+                if (!ValidateInput())
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin cần sửa!");
+                    return;
+                }
+
+                int bookId = int.Parse(txtID.Text);
+
+                // Kiểm tra tồn tại của sách dựa trên ID
+                var existingBook = bookBLL.GetAllBooks().FirstOrDefault(b => b.id == bookId);
+                if (existingBook == null)
+                {
+                    MessageBox.Show("Sách không tồn tại. Không thể cập nhật!");
+                    return;
+                }
+
+                // Kiểm tra hình ảnh: cả ảnh mới và cũ đều không tồn tại
+                if (picBook.Image == null && !HasExistingImage(bookId))
+                {
+                    MessageBox.Show("Không có hình ảnh nào được chọn. Vui lòng chọn hoặc giữ lại hình ảnh cũ!");
+                    return;
+                }
+
+                // Lấy hình ảnh (mới hoặc giữ nguyên)
+                byte[] image = picBook.Image != null ? ImageToByteArray(picBook.Image) : existingBook.image;
+                
+                // Tạo đối tượng sách để cập nhật
+                var bookToUpdate = CreateBookObjectForUpdate(bookId, image);
+
+                Console.WriteLine($"Calling UpdateBookAndAuthor with authorId: {cboAuthor.SelectedValue}");
+
+                // Thực hiện cập nhật sách và tác giả
+                if (UpdateBookAndAuthor(bookToUpdate))
+                {
+                    MessageBox.Show("Cập nhật sách và tác giả thành công!");
+                    LoadBooks();
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật sách thành công nhưng tác giả thất bại. Vui lòng thử lại!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}");
+            }
         }
 
         private void BtnClear_Click(object sender, EventArgs e)
@@ -63,6 +164,7 @@ namespace QLBanSach
             txtName.Focus();
         }
 
+        // Chọn hình ảnh để thêm vào
         private void BtnChoose_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
@@ -115,7 +217,7 @@ namespace QLBanSach
                             id_publisher = existingBook.id_publisher,
                             code_category = existingBook.code_category,
                             image = existingBook.image,
-                            create_by = "Admin",
+                            create_by = Properties.Settings.Default.username,
                             create_date = DateTime.Now
                         });
                         if (isUpdated)
@@ -138,10 +240,14 @@ namespace QLBanSach
                         price = decimal.Parse(txtPrice.Text),
                         quantity = int.Parse(txtQuantity.Text),
                         description = txtDescription.Text,
+                        status = 1,
                         id_publisher = int.Parse(cboPublisher.SelectedValue.ToString()),
                         code_category = cboCategory.SelectedValue.ToString(),
                         image = picBook.Image != null ? ImageToByteArray(picBook.Image) : null,
-                        create_by = "Admin",
+                        create_by = Properties.Settings.Default.username,
+                        number_of_purchases = 0,
+                        number_of_views = 0,
+                        priority = Convert.ToByte(cboPrio.SelectedValue),
                         create_date = DateTime.Now
                     };
 
@@ -191,6 +297,17 @@ namespace QLBanSach
                 int publisherId = row.Cells["id_publisher"].Value != null ? Convert.ToInt32(row.Cells["id_publisher"].Value) : 0;
                 string categoryCode = row.Cells["code_category"].Value != null ? row.Cells["code_category"].Value.ToString() : string.Empty;
 
+                var book = bookBLL.GetAllBooks().FirstOrDefault(b => b.id == bookId);
+                // Hiển thị Priority trong ComboBox
+                if (book != null && book.priority.HasValue)
+                {
+                    cboPrio.SelectedValue = Convert.ToInt32(book.priority.Value); // Chuyển đổi sang int
+                }
+                else
+                {
+                    cboPrio.SelectedIndex = -1; // Nếu không có giá trị Priority, xóa lựa chọn
+                }
+
                 // Hiển thị tên tác giả nếu bookId khác 0
                 if (bookId != 0)
                 {
@@ -227,7 +344,6 @@ namespace QLBanSach
                 // Hiển thị hình ảnh
                 if (bookId != 0)
                 {
-                    var book = bookBLL.GetAllBooks().FirstOrDefault(b => b.id == bookId);
                     if (book != null && book.image != null)
                     {
                         // Nếu book.image là byte[], chuyển đổi thành Image
@@ -317,8 +433,55 @@ namespace QLBanSach
                 book.description,
                 book.id_publisher,
                 book.code_category,
-                book.image
+                image = book.image != null ? ResizeImage(ByteArrayToImage(book.image), 70, 90) : null
             }).ToList();
+
+            // Điều chỉnh cột hình ảnh
+            if (!dgvBook.Columns.Contains("image"))
+            {
+                dgvBook.Columns.Add(new DataGridViewImageColumn
+                {
+                    Name = "image",
+                    HeaderText = "Hình ảnh",
+                    ImageLayout = DataGridViewImageCellLayout.Zoom // Để ảnh vừa khung và giữ tỷ lệ
+                });
+            }
+
+            // Điều chỉnh chiều cao và chiều rộng
+            dgvBook.RowTemplate.Height = 100; // Chiều cao hàng
+
+            // Căn giữa chữ trong tất cả các cột
+            foreach (DataGridViewColumn column in dgvBook.Columns)
+            {
+                column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Căn giữa ngang
+                column.DefaultCellStyle.WrapMode = DataGridViewTriState.True; // Tự động xuống dòng nếu dài
+            }
+
+            // Căn giữa chữ trong tiêu đề cột (Header)
+            dgvBook.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // Cập nhật dữ liệu hình ảnh vào cột
+            foreach (DataGridViewRow row in dgvBook.Rows)
+            {
+                var image = row.Cells["image"].Value;
+                row.Cells["image"].Value = image ?? SystemIcons.Warning.ToBitmap(); // Icon cảnh báo
+            }
+
+            dgvBook.Columns["id"].Visible = false;
+        }
+
+        // Giảm kích thước hình ảnh
+        private Image ResizeImage(Image image, int width, int height)
+        {
+            if (image == null) return null;
+
+            Bitmap resizedImage = new Bitmap(width, height);
+            using (Graphics g = Graphics.FromImage(resizedImage))
+            {
+                g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                g.DrawImage(image, 0, 0, width, height);
+            }
+            return resizedImage;
         }
 
         // Tải danh sách tác giả vào cboAuthor
@@ -352,5 +515,68 @@ namespace QLBanSach
             }
         }
 
+        // Đổ độ ưu tiên lên cboPrio
+        private void LoadPriorities()
+        {
+            var priorities = bookBLL.GetPriorities();
+            cboPrio.DataSource = priorities;
+            cboPrio.DisplayMember = "Value"; // Hiển thị tên mức độ ưu tiên
+            cboPrio.ValueMember = "Key";     // Giá trị thực tế
+        }
+
+        // ===========================Các hàm xử lí kiểm tra khi UPDATE
+        private bool ValidateInput()
+        {
+            return !(string.IsNullOrWhiteSpace(txtID.Text) ||
+             string.IsNullOrWhiteSpace(txtName.Text) ||
+             string.IsNullOrWhiteSpace(txtBarcode.Text) ||
+             string.IsNullOrWhiteSpace(txtPrice.Text) ||
+             string.IsNullOrWhiteSpace(txtQuantity.Text) ||
+             cboAuthor.SelectedValue == null);
+        }
+
+        // Lấy hình ảnh hiện tại của sách từ cơ sở dữ liệu
+        private byte[] GetExistingImage(int bookId)
+        {
+            var existingBook = bookBLL.GetAllBooks().FirstOrDefault(b => b.id == bookId);
+            return existingBook?.image;
+        }
+
+        // Kiểm tra xem sách có hình ảnh cũ không
+        private bool HasExistingImage(int bookId)
+        {
+            return GetExistingImage(bookId) != null;
+        }
+
+        // Tạo đối tượng sách để cập nhật
+        private book CreateBookObjectForUpdate(int bookId, byte[] image)
+        {
+            return new book
+            {
+                id = bookId,
+                name = txtName.Text,
+                barcode = txtBarcode.Text,
+                price = decimal.Parse(txtPrice.Text),
+                quantity = int.Parse(txtQuantity.Text),
+                description = txtDescription.Text,
+                id_publisher = int.Parse(cboPublisher.SelectedValue.ToString()),
+                code_category = cboCategory.SelectedValue.ToString(),
+                image = image,
+                priority = cboPrio.SelectedValue != null ? Convert.ToByte(cboPrio.SelectedValue) : (byte?)null
+            };
+        }
+
+        // Thực hiện cập nhật sách và tác giả
+        private bool UpdateBookAndAuthor(book bookToUpdate)
+        {
+            if (bookBLL.UpdateBook(bookToUpdate))
+            {
+                int authorId = int.Parse(cboAuthor.SelectedValue.ToString());
+                Console.WriteLine($"cboAuthor SelectedValue changed to: {cboAuthor.SelectedValue}");
+                var bookJoinAuthorBLL = new BookJoinAuthorBLL();
+                return bookJoinAuthorBLL.UpdateBookJoinAuthor(bookToUpdate.id, authorId);
+            }
+            return false;
+        }
     }
 }

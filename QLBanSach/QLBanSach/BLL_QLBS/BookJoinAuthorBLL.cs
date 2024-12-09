@@ -28,6 +28,11 @@ namespace BLL_QLBS
 
             return bookJoinAuthorDAL.AddBookJoinAuthor(newRecord);
         }
+        // Cập nhật tác giả liên kết với sách
+        public bool UpdateBookJoinAuthor(int idBook, int idAuthor)
+        {
+            return bookJoinAuthorDAL.UpdateBookJoinAuthor(idBook, idAuthor);
+        }
         // Lấy ID tác giả theo ID sách
         public int? GetAuthorIdByBookId(int idBook)
         {

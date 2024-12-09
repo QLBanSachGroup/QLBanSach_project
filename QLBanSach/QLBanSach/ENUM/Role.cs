@@ -10,6 +10,7 @@ namespace ENUM
     {
         USER,
         ADMIN,
-        EMPLOYEE
+        EMPLOYEE,
+        SALER
     }
 }

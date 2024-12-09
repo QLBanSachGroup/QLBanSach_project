@@ -45,7 +45,9 @@ namespace DAL_QLBS
                                address = u.address,
                                email = u.email,
                                gender = u.gender,
-                               date_of_birth = (DateTime)u.date_of_birth
+                               date_of_birth = (DateTime)u.date_of_birth,
+                               user_name = u.user_name,
+                               password = u.password
                            })
                            .ToList();
             }

@@ -51,6 +51,7 @@ namespace DAL_QLBS
                     author.bio = updatedAuthor.bio;
                     author.phone = updatedAuthor.phone;
                     author.email = updatedAuthor.email;
+                    author.image = updatedAuthor.image;
                     qlbs.SubmitChanges();
                     return true;
                 }
