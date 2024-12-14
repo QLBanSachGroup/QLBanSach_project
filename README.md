@@ -60,24 +60,23 @@ Mô tả dự án:
   - Thêm/Xóa/Sửa thông tin Khách hàng
   Quản lý sách
 
- Thêm và cập nhật sách
- Tra cứu thông tin sách
- Quản lý thể loại và nhà xuất bản
+ - Thêm và cập nhật sách
+ - Tra cứu thông tin sách
+ - Quản lý thể loại và nhà xuất bản
 
- Thêm và cập nhật
- Quản lý khách hàng
+ - Thêm và cập nhật
+ - Quản lý khách hàng
  
- Thêm và cập nhật
- Tra cứu thông tin khách hàng
- Quản lý tin tức
+ - Thêm và cập nhật
+ - Tra cứu thông tin khách hàng
+ - Quản lý tin tức
  
- Thêm và cập nhật
- Duyệt tin tức
- Quản lý nhân viên và chức vụ
+ - Thêm và cập nhật
+ - Duyệt tin tức
+ - Quản lý nhân viên và chức vụ
  
- Thêm và cập nhật
- Phân quyền nhân viên tùy theo chức vụ
- Tra cứu thông tin của nhân viên
- Báo cáo
+ - Thêm và cập nhật
+ - Phân quyền nhân viên tùy theo chức vụ
+ - Tra cứu thông tin của nhân viên
 
-
+ -Thống Kê
