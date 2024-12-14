@@ -13,7 +13,7 @@ Mô tả dự án:
 - Hệ thống ứng dụng đa nền tảng cho phép người dùng mua sách trực tuyến. Hệ thống này sẽ có chức năng xem sản phẩm, đặt hàng, thanh toán .
 - Được truy cập thông qua mạng, người dùng có thể trải nghiệm việc tìm kiếm và lựa sách một cách linh hoạt, nhanh chóng mà công nghệ mang lại.
 ### Yêu cầu
-- AI: gợi ý sản phẩm.
+- AI: gợi ý sản phẩm, Đọc mô tả
 
 - Web:MVC ASP
 - Ngôn Ngữ:C#
@@ -59,12 +59,12 @@ Mô tả dự án:
   ### Quản lí khách hàng
   - Thêm/Xóa/Sửa thông tin Khách hàng
   - Tra cứu thông tin khách hàng 
-  ###Quản lý sách
+  ### Quản lý sách
  - Thêm và cập nhật sách
  - Tra cứu thông tin sách
  - Quản lý thể loại và nhà xuất bản
  - Thêm và cập nhật
-  ###Quản lý nhân viên và chức vụ 
+ ### Quản lý nhân viên và chức vụ 
  - Thêm và cập nhật
  - Phân quyền nhân viên tùy theo chức vụ
  ###Thống Kê
